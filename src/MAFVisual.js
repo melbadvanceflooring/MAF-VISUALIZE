@@ -39,7 +39,7 @@ export default function MAFVisual() {
     const swatchBlob = await fetch(floorboard.url).then(res => res.blob());
     formData.append("swatch", swatchBlob);
 
-    const response = await fetch("https://maf-visual-api.onrender.com/process", {
+    const response = await fetch("https://maf-visual-api.vercel.app/api/process", {
       method: "POST",
       body: formData,
     });
