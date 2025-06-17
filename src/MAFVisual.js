@@ -7,10 +7,10 @@ export default function MAFVisual() {
   const [isLoading, setIsLoading] = useState(false);
 
   const floorOptions = [
-    { name: 'Dim Grey', url: process.env.PUBLIC_URL + '/floorboards/7109-Dim-Grey-scaled.jpg' },
-    { name: 'Classic Blackbutt', url: process.env.PUBLIC_URL + '/floorboards/7105-Classic-Blackbutt-scaled.jpg' },
-    { name: 'Pale Oak', url: process.env.PUBLIC_URL + '/floorboards/7103-Pale-Oak-scaled.jpg' }
-  ];
+  { name: 'Dim Grey', url: '/floorboards/7109-Dim-Grey-scaled.jpg' },
+  { name: 'Classic Blackbutt', url: '/floorboards/7105-Classic-Blackbutt-scaled.jpg' },
+  { name: 'Pale Oak', url: '/floorboards/7103-Pale-Oak-scaled.jpg' }
+];
 
   const handleRoomImageChange = (e) => {
     const file = e.target.files[0];
